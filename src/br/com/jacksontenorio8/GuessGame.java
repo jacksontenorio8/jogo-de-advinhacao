@@ -20,6 +20,30 @@ public class GuessGame {
         int guessp3 = 0;
 
         /*declara três variáveis para armazenar um valor verdadeiro ou falso baseado
-        * na resposta do jogador*/
+         na resposta do jogador*/
+        boolean p1isRight = false;
+        boolean p2isRight = false;
+        boolean p3isRight = false;
+
+        /*Cria um número 'alvo' que os jogadores vão ter que advinhar*/
+
+        int targetNumber = (int) (Math.random() * 10);
+        System.out.println("Estou pensando em um número entre 0 e 9...");
+
+        while(true) {
+            System.out.println("O número a advinhar é " + targetNumber);
+
+            //Chama o método guess de cada jogador
+
+            p1.guess();
+            p2.guess();
+            p3.guess();
+
+            /*
+            Obtém o palpite de cada jogador, o resulatado da execução de seu metódo guess() acresentando a
+            variável númerica de cada um.
+            */
+        }
+
     }
 }
