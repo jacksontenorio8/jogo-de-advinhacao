@@ -40,9 +40,35 @@ public class GuessGame {
             p3.guess();
 
             /*
-            Obtém o palpite de cada jogador, o resulatado da execução de seu metódo guess() acresentando a
+            Obtém o palpite de cada jogador, o resulta do da execução de seu metódo guess() acresentando a
             variável númerica de cada um.
             */
+            guessp1 = p1.number;
+            System.out.println("O jogador um forneceu o palpite " + guessp1);
+            guessp2 = p2.number;
+            System.out.println("O jogador dois forneceu o palpite " + guessp2);
+            guessp3 = p3.number;
+            System.out.println("O jogador três forneceu o palpite " +guessp3);
+
+            /*
+            Verifica o palpite de cada jogador para ver se é igual ao número-alvo. Se um jogador acertar,
+            sua variável será configurada com true (lembre-se de que configuramos false como padrão)
+            */
+
+            if (guessp1 == targetNumber) {
+                p1isRight = true;
+            }
+            if(guessp2 == targetNumber) {
+                p2isRight = true;
+            }
+            if(guessp3 == targetNumber) {
+                p3isRight = true;
+            }
+
+            /*
+            se o jogador um OU o jogador dois OU o jogador três acertar... (O operador || significa OU.)
+            */
+
         }
 
     }
