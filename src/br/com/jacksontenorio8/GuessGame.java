@@ -69,7 +69,7 @@ public class GuessGame {
             se o jogador um OU o jogador dois OU o jogador três acertar... (O operador || significa OU.)
             */
 
-            if(p1isRight || p2isRigtht || p3isRight) {
+            if(p1isRight || p2isRight || p3isRight) {
 
                 System.out.println("Temos um vencedor!");
                 System.out.println("O jogador acertou? " + p1isRight);
